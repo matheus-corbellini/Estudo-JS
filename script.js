@@ -290,6 +290,22 @@ for(let i = 0; i < matheus.length; i++){
     if(typeof matheus[i] === 'number') break;
     console.log(matheus[i], typeof matheus[i]);
 }
+
+    WHILE LOOP
+let rep = 1;
+while(rep <= 10){
+     console.log(`Lifting weights repetition ${rep}`);
+    rep++
+};
+
+-Math.trunc: tira os decimais, Math.random: numero aleatorio, dice sempre sera diferente, o reusltado nao sera fixo:
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+while(dice != 6){
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if(dice === 6) console.log('Loop is about to end');
+};
 */
 
 

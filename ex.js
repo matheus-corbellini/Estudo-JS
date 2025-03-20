@@ -199,3 +199,53 @@ for(let i = 0; i<population.length; i++){
 }
 
 //console.log(percentages2);
+
+//EX10 LOOPING BACKWARDS AND LOOPS IN LOOPS
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+for(let i = 0; i < listOfNeighbours.length; i++){
+    for(let y = 0; y < listOfNeighbours[i].length; y++){
+        // console.log(`Neighbor: ${listOfNeighbours[i][y]}`);
+    }
+}
+
+
+//EX11 WHILE LOOP
+const percentages3 = [];
+let i = 0;
+while(i < population.length){
+    const perc = percentageOfWorld1(population[i]);
+    percentages3.push(perc);
+    i++;
+};
+
+// console.log(percentages3);
+
+
+//DESAFIO 4
+const bills2 = [295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips2 = [];
+const totals2 = [];
+
+const calcTip2 = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+  }
+
+  for(let i = 0; i < bills2.length; i++){
+    const tip = calcTip2(bills2[i]);
+    const total = calcTip2(bills2[i]) + bills2[i];
+    tips2.push(tip);
+    totals2.push(total);
+  }
+
+//  console.log(tips2, totals2);
+
+  const calcAverage2 = function(arr){
+    let sum = 0;
+    for(let i = 0; i < arr.length(); i++){
+        sum += arr[i];
+    }
+    const average = sum / arr.length;
+    return average;
+  }
+
